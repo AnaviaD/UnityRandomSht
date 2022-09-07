@@ -4,9 +4,29 @@ using UnityEngine;
 
 public class DNA : MonoBehaviour
 {
+    // Gen de colores
+    public float r;
+    public float g;
+    public float b;
+    bool dead = false;
+    public float timeToDie = 0.0f;
+    spriteRenderer sRenderer;
+    Collider2D sCollider;
+
+    void void OnMouseDown()
+    {
+        dead = true;
+        timeToDie = PopulationManager.elapsed;
+        debug.Log("Dead At: " + timeToDie.ToString());
+        sRendere.enable = false;        
+        sCollider.enable = false;        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        sRenderer = GetComponent<SpriteRenderer>();
+        sCollider = GetComponent<Collider2D>();
         
     }
 
