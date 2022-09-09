@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DNA : MonoBehaviour
 {
+    
     // Gen de colores
     public float r;
     public float g;
