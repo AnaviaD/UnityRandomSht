@@ -11,7 +11,6 @@ public class PopulationManager : MonoBehaviour
     int trialTime = 10;
     int generation = 1;
 
-
     GUIStyle guiStyle = new GUIStyle();
     void OnGUI() 
     {
